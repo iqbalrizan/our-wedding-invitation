@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding-Kibal</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <audio id="bg-audio" loop>
+        <source src="./assets/sound/audio-bg.mp3" type="audio/mpeg">
+        Browser kamu tidak mendukung pemutaran audio.
+      </audio>
+
+
+
+
+
+<div id="invitation-card" class="invitation-card">
+  <div class="invitation-inner">
+    <h2>Kibal & Friends</h2>
+    <div class="invitation-front">
+      <h2>You're Invited!</h2>
+      <p>THE WEDDING OF</p>
+    </div>
+    
+    <div class="invitation-back">
+      <h1>Rina & Budi</h1>
+      <p>Join us in celebrating our special day</p>
+      <div class="invitation-content">
+        <p>📅 Date: Sunday, June 9th, 2025</p>
+        <p>📍 Location: Gedung Serbaguna, Jakarta</p>
+        <p>💌 We can't wait to see you there!</p>
+        <p style="margin-top: 40px;">(More content here...)</p>
+      </div>
+      
+      <section id="buku-tamu" style="padding: 2rem;">
+        <h2>Buku Tamu</h2>
+        <form id="guest-form">
+          <input type="text" name="nama" placeholder="Nama Kamu" required><br>
+          <textarea name="ucapan" placeholder="Tulis ucapan..." required></textarea><br>
+          <button type="submit">Kirim</button>
+        </form>
+        <p id="status"></p>
+      </section>
+      
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxK2mSRtAELxAiLSWsFsOau6XUGRIlmnBrjblNx9SZ2s36zav96W56XPEKRtH99By4e/exec';
+        const form = document.getElementById('guest-form');
+        const status = document.getElementById('status');
+      
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const data = {
+            nama: form.nama.value,
+            ucapan: form.ucapan.value
+          };
+      
+          fetch(scriptURL, {
+            method: 'POST',
+            body: JSON.stringify(data)
+          })
+          .then(res => res.json())
+          .then(res => {
+            status.innerText = "Ucapan terkirim. Terima kasih!";
+            form.reset();
+          })
+          .catch(err => {
+            status.innerText = "Gagal mengirim. Coba lagi ya.";
+            console.error(err);
+          });
+        });
+      </script>
+      
+      <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://wedding-kibal.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+    </div>
+  </div>
+</div>
+
+<button id="open-btn" class="open-btn">Open Invitation</button>
+
+
+    
+  
+  
+      
+      
+<script>
+    const openBtn = document.getElementById('open-btn');
+    const invitationCard = document.getElementById('invitation-card');
+  
+    openBtn.addEventListener('click', () => {
+      invitationCard.classList.add('open');
+      openBtn.classList.add('fade-out');
+      document.body.classList.add('unlocked'); 
+      setTimeout(() => {
+        openBtn.style.display = 'none';
+      }, 400);
+    });
+  </script>
+  
+  <script>
+    const playButton = document.getElementById('open-btn');
+    const audio = document.getElementById('bg-audio');
+  
+    playButton.addEventListener('click', () => {
+      audio.play().then(() => {
+        console.log('Musik mulai diputar!');
+      }).catch((error) => {
+        console.warn('Autoplay gagal:', error);
+      });
+    });
+  </script>
+  
+      
+  
+  
+  
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script id="dsq-count-scr" src="//wedding-kibal.disqus.com/count.js" async></script>
+</body>
+</html>
