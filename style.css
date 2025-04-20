@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: #fcefe3;
+    background: #ffe6b3;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,6 +14,22 @@ body {
   body.unlocked {
     height: auto;               
     overflow: auto;           
+  }
+
+  .opening-section {
+    background-image: url("./assets/images/bg-flower.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 120px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .opening-section h4 {
+    letter-spacing: 2px;
+    color: #333;
+    font-family: 'Courier New', Courier, monospace !important;
   }
   
   
@@ -47,6 +63,9 @@ body {
 
   .invitation-front {
     background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .invitation-front p {
@@ -62,9 +81,23 @@ body {
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     background-image: url("./assets/images/bg-flower.jpg");
-    background-size: contain;
+    background-size: cover;
+    
    
   }
+
+  #kepada {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  #kepada strong {
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-top: 0.5rem;
+  }
+  
   .invitation-inner h2 {
     font-family: sacramento;
   }
@@ -73,8 +106,7 @@ body {
     transform: rotateY(180deg);
   }
   
-  .invitation-front,
-  .invitation-back {
+  .invitation-front {
     position: absolute;
     width: 100%;
     backface-visibility: hidden;
@@ -95,7 +127,11 @@ body {
     background-color: #fff;
     transform: rotateY(180deg);
     text-align: center;
-    padding-bottom: 80px;
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    box-sizing: border-box;
   }
   
   .invitation-back h1 {
@@ -117,4 +153,441 @@ body {
     color: #333;
     line-height: 1.7;
   }
+
+
+
+  .pembukaan {
+    text-align: center;
+    padding: 120px 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: #5c4033; 
+  }
+  
+  .pembukaan .bismillah {
+    font-family: 'Sacramento', cursive;
+    font-size: 1.5rem;
+    color: #8B4513; 
+    margin-bottom: 1rem;
+  }
+  
+  .pembukaan .salam {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .pembukaan .ayat {
+    font-size: 1rem;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Section 3 */
+
+  .section-undangan {
+    padding: 120px 2rem;
+    background-color: #fff9f0;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    color: #5a483f;
+    background-image: url("./assets/images/bg-2.jpg");
+    background-size: cover;
+  }
+  
+  .container-undangan {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .kalimat-pembuka {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    font-style: italic;
+  }
+  
+  .nama-mempelai {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .nama-mempelai .dan {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #b08968;
+  }
+  
+  .mempelai h2 {
+    font-size: 2.8rem;
+    font-family: 'Sacramento', cursive;
+    color: #8b5e3c;
+    margin: 0.5rem 0;
+  }
+  
+  .orang-tua {
+    font-size: 1rem;
+    color: #5a483f;
+  }
+  
+
+  /* Section 4 */
+  .section-jadwal {
+    background-color: #fff;
+    padding: 4rem 2rem;
+    font-family: 'Georgia', serif;
+    color: #3e3e3e;
+    text-align: center;
+  }
+  
+  .container-jadwal {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .box-jadwal {
+    background-color: #fff9f0;
+    border: 2px solid #f2e0c9;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .box-jadwal:hover {
+    transform: translateY(-5px);
+  }
+  
+  .box-jadwal h3 {
+    font-size: 1.5rem;
+    color: #8b5e3c;
+    margin-bottom: 1rem;
+  }
+  
+  .box-jadwal .tanggal {
+    font-weight: bold;
+    color: #b08968;
+    margin-bottom: 0.5rem;
+  }
+  
+  .box-jadwal p {
+    margin: 0.3rem 0;
+    line-height: 1.6;
+  }
+  
+  @media (min-width: 768px) {
+    .container-jadwal {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .box-jadwal {
+      width: 45%;
+    }
+  }
+  
+
+  /* Section 5 */
+  .section-save-date {
+    background: #fdf6f0;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .save-date-content h2 {
+    font-family: 'Sacramento', cursive;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    color: #8b5e3c;
+  }
+  
+  .countdown {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .countdown div {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  
+  .countdown span {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #b08968;
+  }
+  
+  .countdown small {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .map-wrapper {
+    margin: 2rem 0;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .map-wrapper img {
+    width: 100%;
+  }
+  
+  .btn-map {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #b08968;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-map:hover {
+    background: #8b5e3c;
+  }
+
+
+  /* Section 6 */
+
+  .section-wallet {
+    padding: 120px 2rem;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .wallet-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .wallet-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  
+  .wallet-buttons button {
+    background: #b08968;
+    color: #fff;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .wallet-buttons button:hover {
+    background: #8b5e3c;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  }
+  
+  .account-info {
+    background: #cdcdcd;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    animation: fadeSlide 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @keyframes fadeSlide {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .account-info button {
+    margin-top: 0.5rem;
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .account-info button:hover {
+    background: #3c9841;
+    transform: scale(1.05);
+  }
+  .salin-nomor {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* section 7 */
+  .guestbook-section {
+    background: #fff9f5;
+    padding: 120px 2rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .guestbook-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #b07a56;
+  }
+  
+  #guest-form input,
+  #guest-form textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  #guest-form textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  #guest-form button {
+    background-color: #b07a56;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  #guest-form button:hover {
+    background-color: #8e5d3c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(176, 122, 86, 0.3);
+  }
+  
+  #status {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #2c3e50;
+    font-weight: bold;
+  }
+
+
+  /* section 8 */
+
+  .penutup-section {
+    background-image: url("./assets/images/bg-3.jpg");
+    background-size: cover;
+    padding: 120px 1.5rem;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin: 3rem 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .penutup-text {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .penutup-terima-kasih {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+  }
+  
+  .penutup-nama {
+    font-size: 1.8rem;
+    color: #d17e6a;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    } to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    } to {
+      opacity: 1;
+    }
+  }
+  
+  /* Footer */
+  .site-footer {
+    background-color: #f9f9f9;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #666;
+    border-top: 1px solid #eee;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .site-footer a {
+    color: #d17e6a;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .site-footer a:hover {
+    color: #b35f4c;
+  }
+  
+  
   
