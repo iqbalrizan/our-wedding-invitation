@@ -82,8 +82,6 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     background-image: url("./assets/images/flower2.jpg");
     background-size: contain;
-    
-   
   }
 
   #kepada {
@@ -235,12 +233,25 @@ body {
   /* Section 4 */
   .section-jadwal {
     background-color: #fff;
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
     font-family: 'Georgia', serif;
     color: #3e3e3e;
     text-align: center;
   }
-  
+
+  .section-jadwal h2 {
+    font-family: 'Sacramento', cursive;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    color: #8b5e3c;
+  }
+
+  .box-jadwal .btn-lokasi {
+    color: #8b5e3c;
+    border: solid 1px #8b5e3c;
+    background: transparent;
+  }
+
   .container-jadwal {
     display: flex;
     flex-direction: column;
@@ -253,11 +264,14 @@ body {
     background-color: #fff9f0;
     border: 2px solid #f2e0c9;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 9rem 0rem;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     transition: transform 0.3s ease;
+    background-image: url("./assets/images/flower5.jpg");
+    background-size: cover;
   }
   
+
   /* .box-jadwal:hover {
     transform: translateY(-5px);
   } */
@@ -282,6 +296,7 @@ body {
   
   .box-jadwal .tanggal {
     font-weight: bold;
+    font-size: 21px !important;
     color: #b08968;
     margin-bottom: 0.5rem;
   }
@@ -290,6 +305,12 @@ body {
     margin: 0.3rem 0;
     line-height: 1.6;
     font-size: 16px !important;
+  }
+
+  .box-jadwal h3 {
+    margin: 0.3rem 0;
+    line-height: 1.6;
+    font-size: 32px !important;
   }
   
   @media (min-width: 768px) {
@@ -307,7 +328,7 @@ body {
   /* Section 5 */
   .section-save-date {
     background: #fdf6f0;
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
     text-align: center;
   }
   
@@ -378,6 +399,13 @@ body {
     text-align: center;
     animation: fadeIn 1s ease-in-out;
 
+  }
+
+  .section-wallet h2 {
+    font-family: 'Sacramento', cursive;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    color: #8b5e3c;
   }
   
   @keyframes fadeIn {
