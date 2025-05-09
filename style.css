@@ -53,11 +53,11 @@ body {
   }
   
   .invitation-card {
-    width: 90%;
+    width: 100%;
     max-width: 600px;
     height: auto;
     perspective: 1000px;
-    margin: 40px auto;
+    margin: 0px auto;
     position: relative;
   }
 
@@ -142,7 +142,7 @@ body {
   }
   
   .invitation-back p {
-    font-size: 18px;
+    font-size: 14px;
     color: #555;
   }
   
@@ -186,7 +186,7 @@ body {
   /* Section 3 */
 
   .section-undangan {
-    padding: 120px 2rem;
+    padding: 70px 2rem;
     background-color: #fff9f0;
     text-align: center;
     font-family: 'Georgia', serif;
@@ -201,17 +201,16 @@ body {
   }
   
   .kalimat-pembuka {
-    font-size: 1.2rem;
+    font-size: 0.6rem;
     line-height: 1.8;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
     font-style: italic;
   }
-  
+
   .nama-mempelai {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
   }
   
   .nama-mempelai .dan {

@@ -1,243 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding-Kibal</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding-Kibal</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
-    <audio id="bg-audio" loop>
-        <source src="./assets/sound/audio-bg.mp3" type="audio/mpeg">
-        Browser kamu tidak mendukung pemutaran audio.
-      </audio>
 
+  <audio id="bg-audio" loop>
+    <!-- <source src="./assets/sound/audio-bg.mp3" type="audio/mpeg"> -->
+    Browser kamu tidak mendukung pemutaran audio.
+  </audio>
 
+  <div id="invitation-card" class="invitation-card">
+    <div class="invitation-inner">
 
-
-
-<div id="invitation-card" class="invitation-card">
-  <div class="invitation-inner">
-    
-    <!-- Kartu Undangan -->
-    <div class="invitation-front">
-      <h3>You're Invited!</h3>
-      <p>THE WEDDING OF</p>
-      <h2>Iqbal & Sakinah</h2>
-      <p id="kepada">
-        Kepada yth:<br><strong id="nama-tamu"></strong>
-      </p>
-          </div>
-    
-    <!-- Main Content -->
-    <div class="invitation-back">
-      <!-- Section 1 -->
-      <div class="opening-section">
-        <h4>The Wedding Of</h4>
-        <h1>Iqbal & Sakinah</h1>
-        <p>Join us in celebrating our special day</p>
+      <!-- Kartu Undangan -->
+      <div class="invitation-front">
+        <p>THE WEDDING OF</p>
+        <h2>Iqbal & Sakinah</h2>
+        <p id="kepada">
+          Kepada yth:<br><strong id="nama-tamu"></strong>
+        </p>
       </div>
 
-      <!-- Section 2 -->
-      <section id="pembukaan" class="pembukaan" data-aos="fade-up">
-        <p class="bismillah">Bismillahirrahmanirrahim</p>
-        <p class="salam">Assalamualaikum warahmatullahi wabarakatuh</p>
-        <p class="ayat">
-          Maha suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah, perkenankanlah putra-putri kami untuk melaksanakan syariat agama-Mu dan mengikuti sunnah Rasul-Mu dalam membentuk rumah tangga yang Sakinah, Mawaddah, dan Warahmah.
-        </p>
-      </section>
+      <!-- Main Content -->
+      <div class="invitation-back">
+        <!-- Section 1 -->
+        <div class="opening-section">
+          <h4>The Wedding Of</h4>
+          <h1>Iqbal & Sakinah</h1>
+          <p>Join us in celebrating our special day</p>
+        </div>
 
-      <!-- Section 3 -->
-      <section class="section-undangan" data-aos="fade-right">
-        <div class="container-undangan">
-          <p class="kalimat-pembuka">
-            Tanpa mengurangi rasa hormat,<br>
-            kami mengundang Bapak/Ibu/Saudara/i serta kerabat sekalian<br>
-            untuk menghadiri acara pernikahan kami:
+        <!-- Section 2 -->
+        <section id="pembukaan" class="pembukaan" data-aos="fade-up">
+          <p class="bismillah">Bismillahirrahmanirrahim</p>
+          <p class="salam">Assalamualaikum warahmatullahi wabarakatuh</p>
+          <p class="ayat">
+            Maha suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah, perkenankanlah putra-putri
+            kami untuk melaksanakan syariat agama-Mu dan mengikuti sunnah Rasul-Mu dalam membentuk rumah tangga yang
+            Sakinah, Mawaddah, dan Warahmah.
           </p>
-      
-          <div class="nama-mempelai">
-            <div class="mempelai">
-              <h2>Iqbal Hakiki, ST</h2>
-              <p class="orang-tua">Putra dari Bapak Edi Yasril & Ibu Laini Susmiarti, A.Md.Kep</p>
-            </div>
-            <span class="dan">&</span>
-            <div class="mempelai">
-              <h2>Sakinah Dwiyanti, MT</h2>
-              <p class="orang-tua">Putri dari Bapak Sayiful Anwar, S.Sos & Ibu Yulia Saskomita, M.Pd</p>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Section 4 -->
-      <section class="section-jadwal" data-aos="fade-left">
-        <div class="container-jadwal">
-          <div class="box-jadwal akad">
-            <h3>AKAD NIKAH</h3>
-            <p class="tanggal">Sabtu, 28 Juni 2025</p>
-            <p>Pukul: <strong>08.00 WIB</strong> s/d selesai</p>
-            <hr>
-            <p>
-              Bertempat di:<br>
-              <strong>Masjid Raya Baitul Izzah</strong><br>
-              Jl. Pembangunan No.1, Bengkulu
+        <!-- Section 3 -->
+        <section class="section-undangan" data-aos="fade-right">
+          <div class="container-undangan">
+            <p class="kalimat-pembuka">
+              Tanpa mengurangi rasa hormat,<br>
+              kami mengundang Bapak/Ibu/Saudara/i serta kerabat sekalian<br>
+              untuk menghadiri acara pernikahan kami:
             </p>
-            <p>
-              <a href="https://www.google.com/maps?q=Masjid+Raya+Baitul+Izzah+Bengkulu" target="_blank" style="display: inline-flex; align-items: center; gap: 4px;">
-                <img src="./assets/images/maps.png" alt="Maps Icon" width="20" height="20">
-                lihat lokasi
-              </a>
-            </p>
-          </div>
-          
-          
-          <div class="box-jadwal resepsi">
-            <h3>RESEPSI</h3>
-            <p class="tanggal">Minggu, 6 Juli 2025</p>
-            <p>Pukul: <strong>08.30 WIB</strong> s/d selesai</p>
-            <hr>
-            <p>Bertempat di:<br><strong>Gedung Sapta Marga</strong><br>Jl. Jend. Sudirman, Padang</p>
-            <p>
-              <a href="https://www.google.com/maps?q=Gedung+Sapta+Marga+Padang" target="_blank" style="display: inline-flex; align-items: center; gap: 4px;">
-                <img src="./assets/images/maps.png" alt="Maps Icon" width="20" height="20">
-                lihat lokasi
-              </a>
-            </p>
-          </div>
-        </div>
-      </section>
 
-      <!-- Section 5 -->
-      <section class="section-save-date" id="save-date" data-aos="fade-up">
-        <div class="save-date-content">
+            <div class="nama-mempelai">
+              <div class="mempelai">
+                <h3>Iqbal Hakiki, ST</h3>
+                <p class="orang-tua">Putra dari Bapak Edi Yasril & Ibu Laini Susmiarti, A.Md.Kep</p>
+              </div>
+              <span class="dan">&</span>
+              <div class="mempelai">
+                <h3>Sakinah Dwiyanti, MT</h3>
+                <p class="orang-tua">Putri dari Bapak Sayiful Anwar, S.Sos & Ibu Yulia Saskomita, M.Pd</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 4 -->
+        <section class="section-save-date" id="save-date" data-aos="fade-up">
+          <div class="save-date-content">
+            <h2>Save The Date</h2>
+
+            <div class="countdown" id="countdown">
+              <div><span id="days">00</span><small>Hari</small></div>
+              <div><span id="hours">00</span><small>Jam</small></div>
+              <div><span id="minutes">00</span><small>Menit</small></div>
+              <div><span id="seconds">00</span><small>Detik</small></div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Section 5 -->
+        <section class="section-jadwal" data-aos="fade-left">
           <h2>Save The Date</h2>
-      
-          <div class="countdown" id="countdown">
-            <div><span id="days">00</span><small>Hari</small></div>
-            <div><span id="hours">00</span><small>Jam</small></div>
-            <div><span id="minutes">00</span><small>Menit</small></div>
-            <div><span id="seconds">00</span><small>Detik</small></div>
-          </div>
-      
-          <div class="map-wrapper">
-           <img src="./assets/images/maps-location.png" alt="">
-          </div>
-      
-          <a href="https://www.google.com/maps?q=Gedung+Sapta+Marga+Padang" target="_blank" class="btn-map">Lihat Lokasi di Google Maps</a>
-        </div>
-      </section>
-
-
-      <!-- Section 6 -->
-      <section class="section-wallet" id="wallet" data-aos="fade-up">
-        <div class="wallet-content">
-          <h2>Dompet Digital</h2>
-          <p>Tanpa mengurangi rasa hormat, bagi yang ingin memberikan tanda kasih, dapat melalui rekening berikut:</p>
-      
-          <div class="wallet-buttons">
-            <button onclick="showAccount('bca')">BCA</button>
-            <button onclick="showAccount('mandiri')">Mandiri</button>
-            <button onclick="showAccount('dana')">DANA</button>
-          </div>
-      
-          <div id="account-info" class="account-info" style="display: none;">
-            <p><strong id="bank-name">Bank</strong></p>
-            <p id="account-number" class="acc-number">1234567890</p>
-            <div class="salin-nomor">
-              <button onclick="copyAccountNumber()">Salin Nomor Rekening</button>
-            <span id="copy-status" class="copy-status"></span>
+          <p>Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara (i) untuk dapat hadir pada acara Resepsi
+            Pernikahan putra dan putri kami yang insya Allah akan diaksanakan pada:</p>
+          <div class="container-jadwal">
+            <div class="box-jadwal akad">
+              <h3>AKAD NIKAH</h3>
+              <p class="tanggal">Sabtu, 28 Juni 2025</p>
+              <p>Pukul: <strong>08.00 WIB</strong> s/d selesai</p>
+              <hr>
+              <p>
+                Bertempat di:<br>
+                <strong>Masjid Raya Baitul Izzah</strong><br>
+                Jl. Pembangunan No.1, Bengkulu
+              </p>
+              <p>
+                <a href="https://www.google.com/maps?q=Masjid+Raya+Baitul+Izzah+Bengkulu" target="_blank"
+                  style="display: inline-flex; align-items: center; gap: 4px;">
+                  <img src="./assets/images/maps.png" alt="Maps Icon" width="20" height="20">
+                  lihat lokasi
+                </a>
+              </p>
             </div>
-            
+
+
+            <div class="box-jadwal resepsi">
+              <h3>RESEPSI</h3>
+              <p class="tanggal">Minggu, 6 Juli 2025</p>
+              <p>Pukul: <strong>08.30 WIB</strong> s/d selesai</p>
+              <hr>
+              <p>Bertempat di:<br><strong>Gedung Sapta Marga</strong><br>Jl. Jend. Sudirman, Padang</p>
+              <p>
+                <a href="https://www.google.com/maps?q=Gedung+Sapta+Marga+Padang" target="_blank"
+                  style="display: inline-flex; align-items: center; gap: 4px;">
+                  <img src="./assets/images/maps.png" alt="Maps Icon" width="20" height="20">
+                  lihat lokasi
+                </a>
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
-      
-      
-      
-      
-      
+        </section>
 
-      
-      
-      
-      <section id="buku-tamu" class="guestbook-section" data-aos="fade-up">
-        <h2>Buku Tamu</h2>
-        <form id="guest-form">
-          <input type="text" name="nama" placeholder="Nama Kamu" required>
-          <textarea name="ucapan" placeholder="Tulis ucapan..." required></textarea>
-          <input type="number" name="jumlah" placeholder="Jumlah orang yang hadir" min="1" required>
-          <button type="submit">Kirim</button>
-        </form>
-        <p id="status"></p>
-      </section>
 
-      <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzHM39CLfYziknxi6sP9NL4XS0Fhe8JCaVmaeyaDO5rRkqXsoApbqZul-XZjrQrYyL-/exec';
-const form = document.getElementById('guest-form');
-const status = document.getElementById('status');
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const data = {
-    nama: form.nama.value,
-    ucapan: form.ucapan.value,
-    jumlah: form.jumlah.value
-  };
 
-  fetch(scriptURL, {
-    method: 'POST',
-    body: JSON.stringify(data)
-  })
-  .then(res => res.json())
-  .then(res => {
-    status.innerText = "Ucapan terkirim. Terima kasih!";
-    form.reset();
-  })
-  .catch(err => {
-    status.innerText = "Gagal mengirim. Coba lagi ya.";
-    console.error(err);
-  });
-});
+        <!-- Section 6 -->
+        <section class="section-wallet" id="wallet" data-aos="fade-up">
+          <div class="wallet-content">
+            <h2>Dompet Digital</h2>
+            <p>Tanpa mengurangi rasa hormat, bagi yang ingin memberikan tanda kasih, dapat melalui rekening berikut:</p>
 
-      </script>
+            <div class="wallet-buttons">
+              <button onclick="showAccount('bca')">BCA</button>
+              <button onclick="showAccount('mandiri')">Mandiri</button>
+              <button onclick="showAccount('dana')">DANA</button>
+            </div>
 
-      <!-- section 8 -->
-      <section id="penutup" class="penutup-section" data-aos="fade-up">
-        <div class="penutup-content">
-          <p class="penutup-text">
-            Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i dapat berkenan hadir dan memberikan do'a restu.
-          </p>
-          <p class="penutup-terima-kasih">Kami yang berbahagia</p>
-          <h3 class="penutup-nama">Iqbal & Sakinah</h3>
-        </div>
-      </section>
+            <div id="account-info" class="account-info" style="display: none;">
+              <p><strong id="bank-name">Bank</strong></p>
+              <p id="account-number" class="acc-number">1234567890</p>
+              <div class="salin-nomor">
+                <button onclick="copyAccountNumber()">Salin Nomor Rekening</button>
+                <span id="copy-status" class="copy-status"></span>
+              </div>
 
-      <!-- Footer -->
-      <footer class="site-footer">
-        <p>Developed with ❤️ by <a href="https://jipitu.vercel.app/" target="_blank">Jipitu Agency</a></p>
-      </footer>
-      
-      
-      
-      
+            </div>
+          </div>
+        </section>
 
+
+
+
+
+
+
+
+
+        <section id="buku-tamu" class="guestbook-section" data-aos="fade-up">
+          <h2>Buku Tamu</h2>
+          <form id="guest-form">
+            <input type="text" name="nama" placeholder="Nama Kamu" required>
+            <textarea name="ucapan" placeholder="Tulis ucapan..." required></textarea>
+            <input type="number" name="jumlah" placeholder="Jumlah orang yang hadir" min="1" required>
+            <button type="submit">Kirim</button>
+          </form>
+          <p id="status"></p>
+        </section>
+
+        <script>
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbzHM39CLfYziknxi6sP9NL4XS0Fhe8JCaVmaeyaDO5rRkqXsoApbqZul-XZjrQrYyL-/exec';
+          const form = document.getElementById('guest-form');
+          const status = document.getElementById('status');
+
+          form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const data = {
+              nama: form.nama.value,
+              ucapan: form.ucapan.value,
+              jumlah: form.jumlah.value
+            };
+
+            fetch(scriptURL, {
+              method: 'POST',
+              body: JSON.stringify(data)
+            })
+              .then(res => res.json())
+              .then(res => {
+                status.innerText = "Ucapan terkirim. Terima kasih!";
+                form.reset();
+              })
+              .catch(err => {
+                status.innerText = "Gagal mengirim. Coba lagi ya.";
+                console.error(err);
+              });
+          });
+
+        </script>
+
+        <!-- section 8 -->
+        <section id="penutup" class="penutup-section" data-aos="fade-up">
+          <div class="penutup-content">
+            <p class="penutup-text">
+              Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i dapat berkenan hadir dan
+              memberikan do'a restu.
+            </p>
+            <p class="penutup-terima-kasih">Kami yang berbahagia</p>
+            <h3 class="penutup-nama">Iqbal & Sakinah</h3>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+          <p>Developed with ❤️ by <a href="https://jipitu.vercel.app/" target="_blank">Jipitu Agency</a></p>
+        </footer>
+
+
+
+
+
+      </div>
     </div>
   </div>
-</div>
 
-<button id="open-btn" class="open-btn">Open Invitation</button>
+  <button id="open-btn" class="open-btn">Open Invitation</button>
 
 
 
@@ -257,7 +262,7 @@ form.addEventListener('submit', (e) => {
         number: "081234567890"
       }
     };
-  
+
     function showAccount(key) {
       const info = accountData[key];
       document.getElementById("bank-name").innerText = info.bank;
@@ -265,7 +270,7 @@ form.addEventListener('submit', (e) => {
       document.getElementById("account-info").style.display = "block";
       document.getElementById("copy-status").innerText = "";
     }
-  
+
     function copyAccountNumber() {
       const number = document.getElementById("account-number").innerText;
       navigator.clipboard.writeText(number).then(() => {
@@ -276,53 +281,53 @@ form.addEventListener('submit', (e) => {
       });
     }
   </script>
-  
-  
+
+
   <!-- Countdown Script -->
   <script>
     const weddingDate = new Date("June 28, 2025 08:00:00").getTime();
-  
+
     const countdown = setInterval(() => {
       const now = new Date().getTime();
       const distance = weddingDate - now;
-  
+
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
       const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
+
       document.getElementById("days").innerText = days < 10 ? "0" + days : days;
       document.getElementById("hours").innerText = hours < 10 ? "0" + hours : hours;
       document.getElementById("minutes").innerText = minutes < 10 ? "0" + minutes : minutes;
       document.getElementById("seconds").innerText = seconds < 10 ? "0" + seconds : seconds;
-  
+
       if (distance < 0) {
         clearInterval(countdown);
         document.getElementById("countdown").innerHTML = "<p>Acara telah dimulai!</p>";
       }
     }, 1000);
   </script>
-  
-      
-      
-<script>
+
+
+
+  <script>
     const openBtn = document.getElementById('open-btn');
     const invitationCard = document.getElementById('invitation-card');
-  
+
     openBtn.addEventListener('click', () => {
       invitationCard.classList.add('open');
       openBtn.classList.add('fade-out');
-      document.body.classList.add('unlocked'); 
+      document.body.classList.add('unlocked');
       setTimeout(() => {
         openBtn.style.display = 'none';
       }, 400);
     });
   </script>
-  
+
   <script>
     const playButton = document.getElementById('open-btn');
     const audio = document.getElementById('bg-audio');
-  
+
     playButton.addEventListener('click', () => {
       audio.play().then(() => {
         console.log('Musik mulai diputar!');
@@ -331,16 +336,16 @@ form.addEventListener('submit', (e) => {
       });
     });
   </script>
-  
-      
-  
+
+
+
   <!-- Dinamis Slug -->
   <script>
     window.addEventListener('DOMContentLoaded', () => {
       const urlParams = new URLSearchParams(window.location.search);
       const to = urlParams.get('to');
       const namaTamu = document.getElementById('nama-tamu');
-  
+
       if (to) {
         const decodedName = decodeURIComponent(to.replace(/\+/g, ' '));
         namaTamu.innerText = decodedName;
@@ -349,20 +354,25 @@ form.addEventListener('submit', (e) => {
       }
     });
   </script>
-  
-  
-  
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>    
-    <script src="script.js"></script>
-    <script id="dsq-count-scr" src="//wedding-kibal.disqus.com/count.js" async></script>
+
+
+
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+      Disqus.</a></noscript>
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="script.js"></script>
+  <script id="dsq-count-scr" src="//wedding-kibal.disqus.com/count.js" async></script>
 </body>
+
 </html>
