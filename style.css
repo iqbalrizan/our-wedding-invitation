@@ -431,6 +431,10 @@ body.unlocked {
   gap: 20px;
 }
 
+.wallet-content .desc {
+  font-style: italic;
+}
+
 .wallet-buttons {
   display: flex;
   justify-content: center;
@@ -440,10 +444,10 @@ body.unlocked {
 }
 
 .wallet-buttons button {
-  background: #b08968;
-  color: #fff;
+  border: solid 1px #b08968;
+  background: transparent;
+  color: #b08968;
   padding: 10px 15px;
-  border: none;
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
