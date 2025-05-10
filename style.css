@@ -245,6 +245,7 @@ body {
 
   .box-jadwal .btn-lokasi {
     color: #8b5e3c;
+    font-size: 11px;
     border: solid 1px #8b5e3c;
     background: transparent;
   }
