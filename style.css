@@ -21,10 +21,15 @@ body.unlocked {
   background-image: url("./assets/images/bg-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 120px 0;
+  padding: 150px 0;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  height: 100vh;
+  
+  justify-content: center; /* centers vertically */
+  align-items: center;     /* centers horizontally */
+  text-align: center;      /* centers text if needed */
 }
 
 .opening-section h4 {
@@ -157,9 +162,10 @@ body.unlocked {
 
 .pembukaan {
   text-align: center;
-  padding: 120px 1rem;
+  padding: 80px 1rem 3rem 1rem;
   font-family: 'Poppins', sans-serif;
   color: #5c4033;
+  background: #FBF7F5;
 }
 
 .pembukaan .bismillah {
@@ -172,12 +178,13 @@ body.unlocked {
 .pembukaan .salam {
   font-weight: bold;
   font-size: 1.2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .pembukaan .ayat {
-  font-size: 1rem;
+  font-size: 10px;
   line-height: 1.8;
+  margin-top: 20px;
   max-width: 600px;
   margin: 0 auto;
   font-style: italic;
@@ -186,13 +193,11 @@ body.unlocked {
 /* Section 3 */
 
 .section-undangan {
-  padding: 40px 1rem 70px 1rem;
-  background-color: #fff9f0;
+  padding: 0px 1rem 70px 1rem;
   text-align: center;
   font-family: 'Georgia', serif;
   color: #5a483f;
-  background-image: url("./assets/images/bg-2.jpg");
-  background-size: cover;
+  background: #FBF7F5;
 }
 
 .container-undangan {
@@ -203,7 +208,7 @@ body.unlocked {
 .kalimat-pembuka {
   font-size: 0.6rem;
   line-height: 1.8;
-  margin-bottom: 1.0rem;
+  margin-bottom: 3.0rem;
   font-style: italic;
 }
 
