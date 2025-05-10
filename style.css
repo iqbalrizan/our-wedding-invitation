@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', sans-serif;
-    background-color: cornsilk !important;
+    background-color: rgb(250 231 225) !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -451,7 +451,7 @@ body {
   }
   
   .account-info {
-    background: #cdcdcd;
+    background: transparent;
     padding: 1rem;
     border-radius: 1rem;
     display: inline-block;
@@ -477,9 +477,9 @@ body {
   
   .account-info button {
     margin-top: 0.5rem;
-    background: #4caf50;
-    color: #fff;
-    border: none;
+    border: solid 1px #8b5e3c;
+    color: #8b5e3c;
+    background: transparent;
     padding: 0.5rem 1.2rem;
     border-radius: 1rem;
     cursor: pointer;
