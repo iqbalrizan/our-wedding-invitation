@@ -186,7 +186,7 @@ body.unlocked {
 /* Section 3 */
 
 .section-undangan {
-  padding: 40px 2rem 70px 2rem;
+  padding: 40px 1rem 70px 1rem;
   background-color: #fff9f0;
   text-align: center;
   font-family: 'Georgia', serif;
@@ -400,7 +400,7 @@ body.unlocked {
 /* Section 6 */
 
 .section-wallet {
-  padding: 120px 2rem;
+  padding: 120px 1rem;
   text-align: center;
   animation: fadeIn 1s ease-in-out;
 
