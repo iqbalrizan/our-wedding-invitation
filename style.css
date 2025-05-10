@@ -33,16 +33,14 @@ body {
   }
   
   
-  
   .open-btn {
     padding: 12px 24px;
-    font-size: 18px;
-    background-color: #BDB395;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
+    margin-top: 25px;
+    font-size: 14px;
+    background-color: transparent;
+    color: black;
+    border: solid 1px black;
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: opacity 0.4s ease;
     z-index: 2;
   }
@@ -75,13 +73,13 @@ body {
   .invitation-inner {
     position: relative;
     width: 100%;
-    min-height: 300px;
+    height:100vh;
     transform-style: preserve-3d;
     transition: transform 1s ease;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    background-image: url("./assets/images/flower2.jpg");
-    background-size: cover;
+    background-image: url("./assets/images/flower3.jpg");
+    background-size: contain;
   }
 
   #kepada {
@@ -109,16 +107,15 @@ body {
     width: 100%;
     backface-visibility: hidden;
     border-radius: 12px;
-    padding: 40px;
+    padding: 180px 40px;
     box-sizing: border-box;
   }
   
- 
-  
   .invitation-front h2 {
     font-family: 'Sacramento', cursive;
-    font-size: 42px;
+    font-size: 50px;
     color: #b56c44;
+    margin-bottom: 24px;
   }
   
   .invitation-back {
@@ -611,7 +608,7 @@ body {
   
   /* Footer */
   .site-footer {
-    background-color: #f9f9f9;
+    background-color: #f4efe9;
     padding: 1.5rem 1rem;
     text-align: center;
     font-size: 12px;
