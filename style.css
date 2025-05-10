@@ -186,7 +186,7 @@ body.unlocked {
 /* Section 3 */
 
 .section-undangan {
-  padding: 70px 2rem;
+  padding: 40px 2rem 70px 2rem;
   background-color: #fff9f0;
   text-align: center;
   font-family: 'Georgia', serif;
@@ -203,7 +203,7 @@ body.unlocked {
 .kalimat-pembuka {
   font-size: 0.6rem;
   line-height: 1.8;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.0rem;
   font-style: italic;
 }
 
@@ -229,6 +229,7 @@ body.unlocked {
 .orang-tua {
   font-size: 1rem;
   color: #5a483f;
+  margin-bottom: 0px;
 }
 
 
