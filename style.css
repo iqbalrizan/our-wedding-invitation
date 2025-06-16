@@ -579,8 +579,7 @@ body.unlocked {
 /* section 8 */
 
 .penutup-section {
-  background-image: url("./assets/images/flower1.jpeg");
-  background-size: cover;
+  background: #f4efe9;
   padding: 65px 1.5rem 0px 1.5rem;
   height: 565px;
   text-align: center;
