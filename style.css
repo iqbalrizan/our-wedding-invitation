@@ -578,10 +578,10 @@ body.unlocked {
 
 /* section 8 */
 
+
 .penutup-section {
   background: #f4efe9;
-  padding: 65px 1.5rem 0px 1.5rem;
-  height: 565px;
+  padding: 5px 1.5rem 0px 1.5rem;
   text-align: center;
   margin: 0px;
   font-family: 'Segoe UI', sans-serif;
@@ -604,10 +604,16 @@ body.unlocked {
 
 .penutup-nama {
   font-size: 3rem;
+  margin-bottom: 0px;
   color: #8e5d3c;
   font-weight: bold;
   font-family: 'Sacramento', cursive;
   animation: fadeIn 1s ease-in-out;
+}
+
+.groom-section {
+ padding: 0px 0px 0px 0px;
+ background: #f4efe9;
 }
 
 @keyframes fadeInUp {
